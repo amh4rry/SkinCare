@@ -1,0 +1,359 @@
+.questionnaire-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 40px 20px;
+}
+
+.questionnaire-paper {
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.questionnaire-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.questionnaire-title {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.questionnaire-subtitle {
+  color: #666;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.questionnaire-stepper {
+  margin-bottom: 40px;
+}
+
+.questionnaire-stepper .MuiStepLabel-label {
+  font-weight: 500;
+}
+
+.questionnaire-stepper .MuiStepLabel-label.Mui-active {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.questionnaire-stepper .MuiStepLabel-label.Mui-completed {
+  color: #4caf50;
+}
+
+.questionnaire-error {
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.step-card {
+  margin-bottom: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  min-height: 500px;
+}
+
+.step-content {
+  padding: 20px 0;
+}
+
+.step-content h6 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 32px;
+}
+
+.form-group .MuiFormLabel-root {
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group .MuiFormControlLabel-label {
+  color: #555;
+  font-size: 15px;
+}
+
+.form-group .MuiRadio-root {
+  color: #667eea;
+}
+
+.form-group .MuiRadio-root.Mui-checked {
+  color: #667eea;
+}
+
+.form-group .MuiCheckbox-root {
+  color: #667eea;
+}
+
+.form-group .MuiCheckbox-root.Mui-checked {
+  color: #667eea;
+}
+
+.age-slider {
+  margin: 20px 0;
+}
+
+.age-slider .MuiSlider-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.age-slider .MuiSlider-track {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.age-slider .MuiSlider-rail {
+  background: #e0e0e0;
+}
+
+.age-slider .MuiSlider-mark {
+  background: #bbb;
+}
+
+.age-slider .MuiSlider-markLabel {
+  color: #666;
+  font-size: 12px;
+}
+
+.form-group .MuiSlider-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.form-group .MuiSlider-track {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.form-group .MuiSlider-rail {
+  background: #e0e0e0;
+}
+
+.form-group .MuiSlider-mark {
+  background: #bbb;
+}
+
+.form-group .MuiSlider-markLabel {
+  color: #666;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-group .MuiTextField-root {
+  margin-top: 8px;
+}
+
+.form-group .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.form-group .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #667eea;
+}
+
+.form-group .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #667eea;
+}
+
+.form-group .MuiInputLabel-outlined.Mui-focused {
+  color: #667eea;
+}
+
+.questionnaire-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.step-info {
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.questionnaire-actions .MuiButton-root {
+  min-width: 120px;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.questionnaire-actions .MuiButton-contained {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.questionnaire-actions .MuiButton-contained:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.questionnaire-actions .MuiButton-outlined {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.questionnaire-actions .MuiButton-outlined:hover {
+  background-color: rgba(102, 126, 234, 0.08);
+  border-color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .questionnaire-container {
+    padding: 20px 10px;
+  }
+
+  .questionnaire-paper {
+    padding: 24px;
+  }
+
+  .questionnaire-title {
+    font-size: 28px;
+  }
+
+  .questionnaire-subtitle {
+    font-size: 16px;
+  }
+
+  .step-content h6 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+
+  .questionnaire-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .questionnaire-actions .MuiButton-root {
+    width: 100%;
+  }
+
+  .step-info {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .questionnaire-paper {
+    padding: 16px;
+  }
+
+  .questionnaire-title {
+    font-size: 24px;
+  }
+
+  .step-content h6 {
+    font-size: 18px;
+  }
+
+  .age-slider .MuiSlider-markLabel {
+    font-size: 10px;
+  }
+}
+
+/* Dark mode support */
+[data-theme="dark"] .questionnaire-container {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+
+[data-theme="dark"] .questionnaire-paper {
+  background: rgba(45, 55, 72, 0.95);
+  color: #f7fafc;
+}
+
+[data-theme="dark"] .questionnaire-subtitle,
+[data-theme="dark"] .form-group .MuiFormLabel-root,
+[data-theme="dark"] .form-group .MuiFormControlLabel-label,
+[data-theme="dark"] .step-info {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .step-content h6 {
+  color: #f7fafc;
+}
+
+[data-theme="dark"] .step-card {
+  background-color: #4a5568;
+}
+
+[data-theme="dark"] .questionnaire-actions {
+  border-top-color: #4a5568;
+}
+
+/* Custom animations */
+.step-card {
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-group .MuiFormControlLabel-root {
+  transition: all 0.2s ease;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px 0;
+}
+
+.form-group .MuiFormControlLabel-root:hover {
+  background-color: rgba(102, 126, 234, 0.05);
+}
+
+/* Stepper customization */
+.questionnaire-stepper .MuiStepConnector-line {
+  border-color: #e0e0e0;
+}
+
+.questionnaire-stepper .MuiStepConnector-root.Mui-active .MuiStepConnector-line,
+.questionnaire-stepper .MuiStepConnector-root.Mui-completed .MuiStepConnector-line {
+  border-color: #667eea;
+}
+
+.questionnaire-stepper .MuiStepIcon-root {
+  color: #e0e0e0;
+}
+
+.questionnaire-stepper .MuiStepIcon-root.Mui-active {
+  color: #667eea;
+}
+
+.questionnaire-stepper .MuiStepIcon-root.Mui-completed {
+  color: #4caf50;
+}

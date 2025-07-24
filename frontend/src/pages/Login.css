@@ -1,0 +1,246 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-content {
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-paper {
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-subtitle {
+  color: #666;
+  font-weight: 400;
+}
+
+.login-alert {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-field {
+  border-radius: 8px;
+}
+
+.login-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.login-field .MuiOutlinedInput-root:hover {
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.1);
+}
+
+.login-field .MuiOutlinedInput-root.Mui-focused {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.login-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.forgot-password-link {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.login-button {
+  height: 50px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: none;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+}
+
+.login-button:disabled {
+  background: #ccc;
+  box-shadow: none;
+  transform: none;
+}
+
+.login-divider {
+  margin: 30px 0 20px 0;
+}
+
+.login-divider .MuiDivider-root {
+  background-color: #e0e0e0;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.social-button {
+  height: 48px;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.google-button {
+  border-color: #db4437;
+  color: #db4437;
+}
+
+.google-button:hover {
+  background-color: #db4437;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(219, 68, 55, 0.3);
+}
+
+.facebook-button {
+  border-color: #4267b2;
+  color: #4267b2;
+}
+
+.facebook-button:hover {
+  background-color: #4267b2;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 103, 178, 0.3);
+}
+
+.login-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.signup-prompt {
+  color: #666;
+}
+
+.signup-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-paper {
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 28px;
+  }
+
+  .social-login {
+    gap: 10px;
+  }
+
+  .social-button {
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+/* Animation for form validation errors */
+.login-field .MuiFormHelperText-root.Mui-error {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Loading state */
+.login-button .MuiCircularProgress-root {
+  margin-right: 8px;
+}
+
+/* Focus styles for accessibility */
+.login-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-width: 2px;
+  border-color: #667eea;
+}
+
+/* Custom scrollbar for mobile */
+@media (max-width: 480px) {
+  .login-container {
+    overflow-y: auto;
+  }
+  
+  .login-container::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .login-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .login-container::-webkit-scrollbar-thumb {
+    background: rgba(102, 126, 234, 0.3);
+    border-radius: 2px;
+  }
+}

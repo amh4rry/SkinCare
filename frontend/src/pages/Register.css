@@ -1,0 +1,335 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.register-content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.register-paper {
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.register-subtitle {
+  color: #666;
+  font-weight: 400;
+}
+
+.register-alert {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.register-field {
+  border-radius: 8px;
+}
+
+.register-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.register-field .MuiOutlinedInput-root:hover {
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.1);
+}
+
+.register-field .MuiOutlinedInput-root.Mui-focused {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.register-field .MuiFormHelperText-root {
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+.helper-text {
+  margin-left: 14px !important;
+  margin-top: 4px !important;
+}
+
+.terms-checkbox {
+  margin: 10px 0;
+  align-items: flex-start;
+}
+
+.terms-checkbox.error .MuiFormControlLabel-label {
+  color: #d32f2f;
+}
+
+.terms-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.terms-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.register-button {
+  height: 50px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: none;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+}
+
+.register-button:disabled {
+  background: #ccc;
+  box-shadow: none;
+  transform: none;
+}
+
+.register-divider {
+  margin: 30px 0 20px 0;
+}
+
+.register-divider .MuiDivider-root {
+  background-color: #e0e0e0;
+}
+
+.social-register {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.social-button {
+  height: 48px;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.google-button {
+  border-color: #db4437;
+  color: #db4437;
+}
+
+.google-button:hover {
+  background-color: #db4437;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(219, 68, 55, 0.3);
+}
+
+.facebook-button {
+  border-color: #4267b2;
+  color: #4267b2;
+}
+
+.facebook-button:hover {
+  background-color: #4267b2;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 103, 178, 0.3);
+}
+
+.register-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.login-prompt {
+  color: #666;
+}
+
+.login-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Password strength indicator */
+.register-field .MuiFormHelperText-root:not(.Mui-error) {
+  color: #666 !important;
+}
+
+/* Date picker styles */
+.register-field input[type="date"] {
+  color-scheme: light;
+}
+
+.register-field input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #667eea;
+  cursor: pointer;
+}
+
+/* Select dropdown styles */
+.register-field .MuiSelect-select {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-paper {
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .social-register {
+    gap: 10px;
+  }
+
+  .social-button {
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-paper {
+    padding: 25px 15px;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .register-subtitle {
+    font-size: 14px;
+  }
+
+  .register-form {
+    gap: 16px;
+  }
+
+  .terms-checkbox .MuiFormControlLabel-label {
+    font-size: 13px;
+  }
+}
+
+/* Animation for form validation errors */
+.register-field .MuiFormHelperText-root.Mui-error {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Loading state */
+.register-button .MuiCircularProgress-root {
+  margin-right: 8px;
+}
+
+/* Focus styles for accessibility */
+.register-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-width: 2px;
+  border-color: #667eea;
+}
+
+.terms-checkbox .MuiCheckbox-root.Mui-checked {
+  color: #667eea;
+}
+
+/* Form validation styles */
+.register-field .MuiOutlinedInput-root.Mui-error {
+  animation: shake 0.5s ease-in-out;
+}
+
+.register-field .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #d32f2f;
+}
+
+/* Success state for valid fields */
+.register-field .MuiOutlinedInput-root:not(.Mui-error):not(.Mui-focused) {
+  border-color: #e0e0e0;
+}
+
+.register-field .MuiOutlinedInput-root:not(.Mui-error):not(.Mui-focused):hover .MuiOutlinedInput-notchedOutline {
+  border-color: #667eea;
+}
+
+/* Custom scrollbar for mobile */
+@media (max-width: 480px) {
+  .register-container {
+    overflow-y: auto;
+  }
+  
+  .register-container::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .register-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .register-container::-webkit-scrollbar-thumb {
+    background: rgba(102, 126, 234, 0.3);
+    border-radius: 2px;
+  }
+}
