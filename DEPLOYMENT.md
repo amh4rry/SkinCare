@@ -156,6 +156,21 @@ This guide will help you deploy your Skin Care AI application for free using Ver
 - **Railway**: Go to your project → "Deployments" → Click on deployment → "View logs"
 - **Vercel**: Go to your project → "Functions" tab → Click on function → "View logs"
 
+### Common Vercel Build Errors:
+
+**Error: "Permission denied" or "Command 'npm run build' exited with 126"**
+- This is now fixed in the latest code update
+- Make sure you're deploying the `frontend` folder, not the root
+- Vercel should automatically detect Vite and use the correct build command
+
+**If you still get build errors:**
+1. In Vercel dashboard, go to your project settings
+2. Set "Framework Preset" to `Vite`
+3. Set "Root Directory" to `frontend`
+4. Set "Build Command" to `npm run build`
+5. Set "Output Directory" to `dist`
+6. Redeploy
+
 ## 🎉 Success!
 
 Your Skin Care AI application is now live! 
