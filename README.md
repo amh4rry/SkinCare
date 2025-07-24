@@ -254,19 +254,59 @@ cd frontend
 npm test
 ```
 
-## 📱 Deployment
+## � Deployment
 
-### Vercel (Frontend)
-1. Connect your GitHub repository to Vercel
-2. Set build command: `npm run build`
-3. Set output directory: `dist`
-4. Deploy automatically on push
+Ready to make your app live? We've made deployment easy with free hosting services!
 
-### Backend Deployment Options
-- **Heroku**: Easy deployment with MongoDB Atlas
-- **Railway**: Modern deployment platform
-- **AWS/DigitalOcean**: VPS deployment
-- **Vercel Functions**: Serverless deployment
+### 🎯 Quick Deploy (Recommended)
+
+**Free hosting stack:**
+- 🌐 **Frontend**: Vercel (Free tier)
+- 🖥️ **Backend**: Railway (Free tier) 
+- 🗄️ **Database**: MongoDB Atlas (Free tier)
+
+### 📋 Prerequisites
+- GitHub account (your code is already there!)
+- Google AI API key
+- 10 minutes of your time
+
+### 🚀 One-Click Setup
+
+1. **Prepare for deployment:**
+   ```bash
+   # Run the deployment preparation script
+   ./deploy-prep.bat  # Windows
+   # or
+   ./deploy-prep.sh   # Mac/Linux
+   ```
+
+2. **Follow the complete guide:**
+   📖 **[Complete Deployment Guide](./DEPLOYMENT.md)** - Step-by-step instructions
+
+### 🎯 What You'll Get
+- ✅ Live, publicly accessible app
+- ✅ Custom domain option  
+- ✅ HTTPS automatically enabled
+- ✅ Auto-deployment on code changes
+- ✅ Professional portfolio piece
+
+### 🌍 Example Deployment
+- **Your App**: `https://skincare-ai.vercel.app`
+- **API**: `https://skincare-backend.railway.app`
+
+---
+
+### Alternative Deployment Options
+
+#### Self-Hosted Options
+- **VPS**: DigitalOcean, Linode, AWS EC2
+- **Docker**: Containerized deployment
+- **Netlify**: Alternative to Vercel
+
+#### Backend Alternatives  
+- **Render**: Alternative to Railway
+- **Heroku**: Classic platform (paid)
+- **AWS Lambda**: Serverless functions
 
 ## 🤝 Contributing
 
