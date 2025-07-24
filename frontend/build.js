@@ -1,28 +1,44 @@
 #!/usr/bin/env node
 
-import { spawn } from 'child_process';
-import path from 'path';
+import { build } from 'vite';
+import react from '@vitejs/plugin-react';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 
-console.log('🚀 Starting custom build process...');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-// Use npx to run vite build to avoid permission issues
-const buildProcess = spawn('npx', ['vite', 'build'], {
-  cwd: process.cwd(),
-  stdio: 'inherit',
-  shell: true
-});
+console.log('🚀 Starting Vercel-compatible build process...');
 
-buildProcess.on('close', (code) => {
-  if (code === 0) {
+async function buildApp() {
+  try {
+    console.log('📦 Building with Vite API...');
+    
+    await build({
+      plugins: [react()],
+      build: {
+        outDir: 'dist',
+        assetsDir: 'assets',
+        sourcemap: false,
+        minify: 'terser',
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              vendor: ['react', 'react-dom'],
+              mui: ['@mui/material', '@mui/icons-material'],
+            },
+          },
+        },
+      },
+      root: __dirname,
+    });
+    
     console.log('✅ Build completed successfully!');
     process.exit(0);
-  } else {
-    console.error('❌ Build failed with code:', code);
+  } catch (error) {
+    console.error('❌ Build failed:', error);
     process.exit(1);
   }
-});
+}
 
-buildProcess.on('error', (error) => {
-  console.error('❌ Build error:', error);
-  process.exit(1);
-});
+buildApp();
