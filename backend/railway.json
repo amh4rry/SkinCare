@@ -1,5 +1,9 @@
 {
-  "engines": {
-    "node": ">=18.0.0"
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "npm start",
+    "healthcheckPath": "/api/health"
   }
 }
